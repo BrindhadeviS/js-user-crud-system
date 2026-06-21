@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details</title>
+    <link rel="stylesheet" href="./userDetail.css" />
+  </head>
+  <body>
+    <main class="profile-container">
+      <aside class="profile-sidebar">
+       <div>
+         <div class="profile-avatar">
+          <img
+            id="profileURL"
+            src="https://via.placeholder.com/150"
+            alt="Profile Picture"
+          />
+        </div>
+        <h3 id="sidebarName"></h3>
+        <p id="sidebarDesignation"></p>
+       </div>
+        <button type="button" id="btnDelete" class="btn-delete">
+            Delete
+          </button>
+      </aside>
+
+      <section class="profile-details">
+        <h2>User Information</h2>
+
+        <div class="details-grid">
+          <div class="detail-group">
+            <label>User ID</label>
+            <span id="userId" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>First Name</label>
+            <span id="firstName" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>Last Name</label>
+            <span id="lastName" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>Date of Birth</label>
+            <span id="dob" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>Gender</label>
+            <span id="gender" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>Designation</label>
+            <span id="designation" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>Experience</label>
+            <span id="experience" class="data-value"></span>
+          </div>
+          <div class="detail-group">
+            <label>Phone</label>
+            <span id="phone" class="data-value"></span>
+          </div>
+          <div class="detail-group full-width">
+            <label>Address</label>
+            <div id="address" class="data-value text-block"></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button type="button" id="btnBack" class="btn-back">Go Back</button>
+          <button type="button" id="updateBtn" class="btn-back">
+            Update
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./userDetail.js"></script>
+  </body>
+</html>

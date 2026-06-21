@@ -1,0 +1,198 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Layout Container */
+.profile-container {
+  display: flex;
+  width: 100%;
+  max-width: 1050px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-height: 550px;
+}
+
+/* Left Sidebar Layout (28%) */
+.profile-sidebar {
+  flex: 0 0 28%;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  margin-bottom: 20px;
+  background-color: #334155;
+}
+
+.profile-sidebar h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.profile-sidebar p {
+  color: #dce1e9;
+  font-size: 0.9rem;
+}
+
+/* Right Content Layout (72%) */
+.profile-details {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps buttons anchored to the bottom */
+}
+
+.profile-details h2 {
+  color: #1e293b;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 12px;
+}
+
+/* 2-Column Layout System for Content */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+/* Individual Data Blocks */
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-group.full-width {
+  grid-column: span 2; /* Span address row completely */
+}
+
+.detail-group label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Styled text look for JS injected data */
+.data-value {
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 1px solid #e2e8f0; /* Underline style display */
+  min-height: 38px; /* Prevents layout collapse before JS loads data */
+  display: block;
+}
+
+.data-value.text-block {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: #f8fafc;
+  line-height: 1.5;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: auto;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 20px;
+}
+
+button {
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-back {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.btn-back:hover {
+  background-color: #e2e8f0;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+#updateBtn{
+    background-color: blue;
+    color: white;
+}
+
+#updateBtn  :hover {
+    background-color: #1d4ed8;
+}
+
+#btnBack{
+    background-color: black;
+    color: white;
+}
+
+#btnBack:hover {
+    background-color: #3a3a3b;
+}
+
+.btn-delete :hover{
+    background-color: red;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-group.full-width {
+    grid-column: span 1;
+  }
+}

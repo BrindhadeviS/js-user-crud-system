@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "userId": "2900",
+      "firstName": "Zara",
+      "lastName": "Rowe",
+      "dob": "1999-04-10",
+      "gender": "female",
+      "designation": "Automation Test Engineer",
+      "experience": "6",
+      "phone": "+1 (605) 868-2017",
+      "profileURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNOX3Ml6mK2x98I3FYVaT2Zu-FmvZ0cPK5YQ&s",
+      "address": "Harum totam error ve",
+      "id": "fw8BS0gqNKs"
+    },
+    {
+      "userId": 6678,
+      "firstName": "Alen",
+      "lastName": "York",
+      "dob": "2000-10-15",
+      "gender": "male",
+      "designation": "Java Full stack developer",
+      "experience": "4",
+      "phone": "+1 (885) 668-8431",
+      "profileURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1nYUKHA8kkUlIr9DG9woo_y0QtY9m9SGylQ&s",
+      "address": "Distinctio Eos aut ",
+      "id": "21Be8H84_mQ"
+    },
+    {
+      "userId": "3544",
+      "firstName": "Lewis",
+      "lastName": "Dodson",
+      "dob": "2003-07-24",
+      "gender": "female",
+      "designation": "Associate Engineer",
+      "experience": "1",
+      "phone": "+1 (587) 579-3879",
+      "profileURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-7kunsl0qr9HQQfNknrHomZB-B_2MGcQhA&s",
+      "address": "Ut laboris ut sunt t",
+      "id": "jQhAZq3tnV8"
+    },
+    {
+      "userId": 5224,
+      "firstName": "Michael",
+      "lastName": "Russo",
+      "dob": "1998-08-02",
+      "gender": "male",
+      "designation": "Data Analyst",
+      "experience": "6",
+      "phone": "+1 (381) 589-8672",
+      "profileURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShYwM33sSN7MtnLIq0k1qjhpoEtSstLE26gA&s",
+      "address": "Corrupti reprehende",
+      "id": "ZO0ou9y-gQ4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
